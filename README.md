@@ -1,6 +1,6 @@
 # Welcome to my personal portfolio website repo!
 
-![Preview of the current design dradt](https://github.com/v-gajjar/v-gajjar.github.io/blob/main/Portfolio_Preview.gif)
+![Preview of the current design draft](https://github.com/v-gajjar/v-gajjar.github.io/blob/main/Portfolio_Preview.gif)
 
 I haven't yet started building the actual site, as I'm still in the drafting phase — but here's what I'm thinking so far:
 
