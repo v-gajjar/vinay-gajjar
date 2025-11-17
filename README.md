@@ -1,8 +1,9 @@
 # Welcome to my personal portfolio website repo!
 
-![Preview of the current design draft](https://github.com/v-gajjar/v-gajjar.github.io/blob/main/Portfolio_Preview.gif)
+![Preview of the current design draft](public/Portfolio_Preview.gif)
 
-I haven't yet started building the actual site, as I'm still in the drafting phase — but here's what I'm thinking so far:
+- I've now finished the initial implementation, and started the implementation.
+- I'm currently testing and tweaking a responsive skeleton. Once I'm satisified with this, I'll start implementing the components for the different sections. 
 
 ## Design
 
@@ -15,8 +16,8 @@ I haven't yet started building the actual site, as I'm still in the drafting pha
 
 ## Tech Stack
 
-- Not yet finalised, but highly likely to be using **Astro**, **TypeScript**, and **TailwindCSS**
-- I’m thinking of using **Canva** or **Figma** to help with prototyping the design
+- I've chosen to use **Astro**, **TypeScript**, and **TailwindCSS**
+- I’m usingf **Figma** to help with prototyping the design, and **Canva** ŧo help create the vidoes
 
 ## Building in Public
 
