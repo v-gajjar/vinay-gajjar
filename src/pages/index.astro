@@ -1,17 +1,34 @@
 ---
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component frontmatter". It never runs in the browser.
-console.log('This runs in your terminal, not the browser!');
+import Layout from '../layouts/Layout.astro';
 ---
-<!-- Below is your "component template." It's just HTML, but with
-    some magic sprinkled in to help you build great templates. -->
-<html>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
-</html>
-<style>
-  h1 {
-    color: orange;
-  }
-</style>
+
+<Layout>
+  <!-- Header -->
+  <header class="flex w-full items-center justify-end bg-[#035C31] px-6 py-4 text-white">
+    <span class="text-lg font-bold md:text-xl lg:text-2xl">Hi, I'm Vinay!</span>
+  </header>
+
+  <!-- Page content -->
+  <div class="flex justify-center py-10">
+    <!-- Central wrapper -->
+    <div class="w-full px-4 sm:w-11/12 md:w-8/12 lg:w-6/12">
+      <!-- Section 1 -->
+      <section class="mb-16">
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">About Me</div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="mb-16 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">Backend</div>
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">Frontend</div>
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">Other</div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="mb-16 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">Project A</div>
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">Project B</div>
+      </section>
+    </div>
+  </div>
+</Layout>
