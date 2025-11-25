@@ -3,32 +3,42 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
+
   <!-- Header -->
   <header class="fixed top-0 left-0 z-40 flex h-16 w-full items-center justify-end bg-[#035C31] px-6 text-white">
-    <h1 class="text-lg font-bold">Hi, I'm Vinay!</h1>
+    <h1 class="text-xl font-bold">Hi, I'm Vinay!</h1>
   </header>
 
 
-  <main class="flex flex-col grow w-full mx-auto">
+  <main class="flex flex-col grow w-full mx-auto pt-16">
     <!-- Section 1 -->
-    <section class="">
-      <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">About Me</div>
-    </section>
-
-    <section class="grid grid-cols-1 md:grid-cols-3">
-      <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">Backend</div>
-      <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">Frontend</div>
-      <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">Other</div>
-    </section>
-
-
-    <section class="">
-      <div class="grid grid-cols-1 md:grid-cols-2">
-        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">Project A</div>
-        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">Project B</div>
+    <section>
+      <h2 class="bg-[#FAFAF5] text-[#035C31] text-center text-lg font-bold p-2">My Story</h2>
+      <div class="p-2">
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">My Story</div>
       </div>
+      
+    </section>
 
-      <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-lg font-semibold text-gray-700">See more projects</div>
+    <section>
+      <h2 class="bg-[#FAFAF5] text-[#035C31] text-center text-lg font-bold p-2">Skills</h2>
+      <div class="grid grid-cols-1 p-2 gap-2 md:grid-cols-3">
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Backend</div>
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Frontend</div>
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Other</div>
+      </div>
+    </section>
+
+
+    <section>
+      <h2 class="bg-[#FAFAF5] text-[#035C31] text-center text-lg font-bold p-2">Projects</h2>
+      <div class="grid grid-cols-1 p-2 gap-2 md:grid-cols-2">
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project A</div>
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project B</div>
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project C</div>
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project D</div>
+        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700 col-span-full">See more projects</div>
+      </div>
     </section>
   </main>
 
