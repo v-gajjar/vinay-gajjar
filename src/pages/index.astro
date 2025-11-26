@@ -14,30 +14,42 @@ import Layout from '../layouts/Layout.astro';
     <!-- Section 1 -->
     <section>
       <h2 class="bg-[#FAFAF5] text-[#035C31] text-center text-lg font-bold p-2">My Story</h2>
-      <div class="p-2">
+      <!-- content wrapper div -->
+      <div class="px-2 py-4 max-w-sm md:max-w-lg lg:max-w-3xl mx-auto">
+        <!-- content -->
         <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">My Story</div>
       </div>
-      
     </section>
 
     <section>
       <h2 class="bg-[#FAFAF5] text-[#035C31] text-center text-lg font-bold p-2">Skills</h2>
-      <div class="grid grid-cols-1 p-2 gap-2 md:grid-cols-3">
-        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Backend</div>
-        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Frontend</div>
-        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Other</div>
+      <!-- content wrapper div -->
+      <div class="px-2 py-4 max-w-sm md:max-w-lg lg:max-w-3xl mx-auto">
+        <!-- content -->
+        <div class="grid grid-cols-1 gap-2 md:grid-cols-3">
+          <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Backend</div>
+          <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Frontend</div>
+          <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Other</div>
+        </div>
       </div>
     </section>
 
 
     <section>
       <h2 class="bg-[#FAFAF5] text-[#035C31] text-center text-lg font-bold p-2">Projects</h2>
-      <div class="grid grid-cols-1 p-2 gap-2 md:grid-cols-2">
-        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project A</div>
-        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project B</div>
-        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project C</div>
-        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project D</div>
-        <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700 col-span-full">See more projects</div>
+      <!-- content wrapper div -->
+      <div class="px-2 py-4 max-w-sm md:max-w-lg lg:max-w-3xl mx-auto">
+        <!-- content -->
+        <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
+          <!-- project cards -->
+          <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project A</div>
+          <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project B</div>
+          <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project C</div>
+          <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700">Project D</div>
+
+          <!-- see more projects card -->
+          <div class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700 col-span-full">See more projects</div>
+        </div>
       </div>
     </section>
   </main>
