@@ -10,6 +10,24 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Astro Basics</title>
+
+    <script>
+      const navMenu = document.getElementById('nav-menu');
+      const openNavMenuButton = document.getElementById('open-nav-menu');
+      const closeNavMenuButton = document.getElementById('close-nav-menu');
+
+      openNavMenuButton.addEventListener('click', () => {
+        navMenu.classList.remove("left-[100vw]");
+        navMenu.classList.add("left-0");
+      })
+
+      closeNavMenuButton.addEventListener('click', () => {
+        navMenu.classList.remove("left-0");
+        navMenu.classList.add("left-[100vw]");
+
+      })
+    </script>
+
   </head>
   <body class="flex flex-col min-h-screen bg-gray-100">
     <slot />
