@@ -5,14 +5,27 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 
   <!-- Header -->
-  <header class="fixed top-0 left-0 z-40 flex h-16 w-full items-center justify-end bg-[#035C31] px-6 text-white">
-    <h1 class="text-xl font-bold">Hi, I'm Vinay!</h1>
+  <header class="fixed top-0 left-0 z-40 flex h-16 w-full items-center bg-[#035C31] px-6 text-white">
+    <h1 class="text-xl font-bold grow">Hi, I'm Vinay!</h1>
+    <button>
+      <!-- Boostrap Icons list icon -->
+      <svg class="bi bi-list size-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+    </button>
+    <nav class="hidden">
+    <ul>
+      <li><a href="#my-story">My Story</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projcts">Projects</a></li>
+    </ul>
+    </nav>
   </header>
 
 
   <main class="flex flex-col grow w-full mx-auto pt-16">
     <!-- Section 1 -->
-    <section>
+    <section id="my-story">
       <h2 class="bg-[#FAFAF5] text-[#035C31] text-center text-lg font-bold p-2">My Story</h2>
       <!-- content wrapper div -->
       <div class="px-2 py-4 max-w-sm md:max-w-lg lg:max-w-3xl mx-auto">
@@ -21,7 +34,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
-    <section>
+    <section id="skills">
       <h2 class="bg-[#FAFAF5] text-[#035C31] text-center text-lg font-bold p-2">Skills</h2>
       <!-- content wrapper div -->
       <div class="px-2 py-4 max-w-sm md:max-w-lg lg:max-w-3xl mx-auto">
@@ -35,7 +48,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
 
-    <section>
+    <section id="projects">
       <h2 class="bg-[#FAFAF5] text-[#035C31] text-center text-lg font-bold p-2">Projects</h2>
       <!-- content wrapper div -->
       <div class="px-2 py-4 max-w-sm md:max-w-lg lg:max-w-3xl mx-auto">
