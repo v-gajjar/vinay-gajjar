@@ -17,7 +17,8 @@
 ## Tech Stack
 
 - I've chosen to use **Astro**, **TypeScript**, and **TailwindCSS**
-- I’m usingf **Figma** to help with prototyping the design, and **Canva** ŧo help create the vidoes
+- I’m using **Figma** to help with prototyping the design, and **Canva** ŧo help create the vidoes
+- I'm using **Bootstrap Icons** by The Bootstrap Authors under the [MIT license](licenses/bootstrap-icons-license.txt)
 
 ## Building in Public
 
