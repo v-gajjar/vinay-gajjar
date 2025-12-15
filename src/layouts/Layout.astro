@@ -8,45 +8,56 @@ import "../styles/global.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>Astro Basics</title>
 
     <script>
+      let isOpen = false;
+      document.addEventListener("DOMContentLoaded", () => {
+        const navMenu = document.getElementById("nav-menu");
+        const toggleNavMenuButton = document.getElementById("toggle-nav-menu");
+        const [hamburgerIcon, xIcon] =
+          toggleNavMenuButton.querySelectorAll("svg");
 
-      let isOpen = false; 
-      document.addEventListener('DOMContentLoaded', () => {
+        navMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
 
-        const navMenu = document.getElementById('nav-menu');
-        const toggleNavMenuButton = document.getElementById('toggle-nav-menu');
-        const [hamburgerIcon, xIcon] = toggleNavMenuButton.querySelectorAll("svg");
+              closeNavMenu();
+          });
+        });
 
-        toggleNavMenuButton.addEventListener('click', () => {
-
-          if ( isOpen ){    
-            hamburgerIcon.classList.replace("opacity-0", "opacity-100");
-            xIcon.classList.replace("opacity-100", "opacity-0");
-
-            navMenu.classList.replace("translate-x-0", "translate-x-full");
-
-            isOpen = false;
+        toggleNavMenuButton.addEventListener("click", () => {
+          if (isOpen) {
+              closeNavMenu();
+          } else {
+              openNavMenu();
           }
-          else {
+        });
+
+        const openNavMenu = () => {
             hamburgerIcon.classList.replace("opacity-100", "opacity-0");
             xIcon.classList.replace("opacity-0", "opacity-100");
 
             navMenu.classList.replace("translate-x-full", "translate-x-0");
 
             isOpen = true;
-          }
-      });
+        }
 
+        const closeNavMenu = () => {
+            hamburgerIcon.classList.replace("opacity-0", "opacity-100");
+            xIcon.classList.replace("opacity-100", "opacity-0");
 
+            navMenu.classList.replace("translate-x-0", "translate-x-full");
+
+            isOpen = false;
+        }
       });
     </script>
-
   </head>
   <body class="flex flex-col min-h-screen bg-gray-100">
     <slot />
   </body>
 </html>
-
