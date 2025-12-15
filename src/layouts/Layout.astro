@@ -26,7 +26,7 @@ import "../styles/global.css";
             hamburgerIcon.classList.replace("opacity-0", "opacity-100");
             xIcon.classList.replace("opacity-100", "opacity-0");
 
-            navMenu.classList.replace("left-0", "left-[100vw]");
+            navMenu.classList.replace("translate-x-0", "translate-x-full");
 
             isOpen = false;
           }
@@ -34,15 +34,11 @@ import "../styles/global.css";
             hamburgerIcon.classList.replace("opacity-100", "opacity-0");
             xIcon.classList.replace("opacity-0", "opacity-100");
 
-            navMenu.classList.replace("left-[100vw]", "left-0");
+            navMenu.classList.replace("translate-x-full", "translate-x-0");
 
             isOpen = true;
           }
-
-
-
-
-      ``});
+      });
 
 
       });
