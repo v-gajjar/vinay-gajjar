@@ -12,20 +12,40 @@ import "../styles/global.css";
     <title>Astro Basics</title>
 
     <script>
-      const navMenu = document.getElementById('nav-menu');
-      const openNavMenuButton = document.getElementById('open-nav-menu');
-      const closeNavMenuButton = document.getElementById('close-nav-menu');
 
-      openNavMenuButton.addEventListener('click', () => {
-        navMenu.classList.remove("left-[100vw]");
-        navMenu.classList.add("left-0");
-      })
+      let isOpen = false; 
+      document.addEventListener('DOMContentLoaded', () => {
 
-      closeNavMenuButton.addEventListener('click', () => {
-        navMenu.classList.remove("left-0");
-        navMenu.classList.add("left-[100vw]");
+        const navMenu = document.getElementById('nav-menu');
+        const toggleNavMenuButton = document.getElementById('toggle-nav-menu');
+        const [hamburgerIcon, xIcon] = toggleNavMenuButton.querySelectorAll("svg");
 
-      })
+        toggleNavMenuButton.addEventListener('click', () => {
+
+          if ( isOpen ){    
+            hamburgerIcon.classList.replace("opacity-0", "opacity-100");
+            xIcon.classList.replace("opacity-100", "opacity-0");
+
+            navMenu.classList.replace("left-0", "left-[100vw]");
+
+            isOpen = false;
+          }
+          else {
+            hamburgerIcon.classList.replace("opacity-100", "opacity-0");
+            xIcon.classList.replace("opacity-0", "opacity-100");
+
+            navMenu.classList.replace("left-[100vw]", "left-0");
+
+            isOpen = true;
+          }
+
+
+
+
+      ``});
+
+
+      });
     </script>
 
   </head>

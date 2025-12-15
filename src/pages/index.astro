@@ -7,24 +7,19 @@ import Layout from '../layouts/Layout.astro';
   <!-- Header -->
   <header class="fixed top-0 left-0 z-40 flex h-16 w-full items-center bg-[#035C31] px-6 text-white">
     <h1 class="text-xl font-bold grow">Hi, I'm Vinay!</h1>
-    <button id="open-nav-menu">
+    <button id="toggle-nav-menu" class="relative size-8">
       <!-- Boostrap Icons list icon -->
-      <svg class="bi bi-list size-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+      <svg class="bi bi-list absolute inset-0 m-auto size-8 absolute m-auto opacity-100 transition-opacity duration-200" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <!-- Boostrap Icons x icon -->
+      <svg class="bi bi-x absolute inset-0 m-auto size-8 absolute m-auto opacity-0 transition-opacity duration-200" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
       </svg>
     </button>
 
     <!-- by default, position the left to the right edge of the screen -->
-    <nav id="nav-menu" class="fixed flex flex-col top-0 transition-left duration-200 left-[100vw] bottom-0 w-full z-80 bg-[#FAFAF5] px-6">
-      <!-- position x button same as hamburger menu button -->
-      <div class="h-16 flex items-center justify-end">
-        <button id="close-nav-menu">
-          <!-- Boostrap Icons x icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x text-[#035C31] size-8" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-          </svg>
-        </button>
-      </div>
+    <nav id="nav-menu" class="fixed flex flex-col top-16 transition-left duration-200 left-[100vw] bottom-0 w-full z-80 bg-[#FAFAF5] px-6">
       <ul class="flex flex-col grow place-content-evenly">
         <li class="text-[#035C31] text-center text-lg font-bold"><a href="#my-story">My Story</a></li>
         <li class="text-[#035C31] text-center text-lg font-bold"><a href="#skills">Skills</a></li>
