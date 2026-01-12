@@ -155,7 +155,7 @@ import Layout from "../layouts/Layout.astro";
     </section>
 
     <section id="skills" class="scroll-mt-16">
-      <h2 class="bg-[#FAFAF5] text-[#035C31] text-center text-lg font-bold p-2">
+      <h2 class=" text-[#035C31] text-center text-lg font-bold p-2">
         Skills
       </h2>
       <!-- content wrapper div -->
@@ -163,19 +163,41 @@ import Layout from "../layouts/Layout.astro";
         <!-- content -->
         <div class="grid grid-cols-1 gap-2 md:grid-cols-3">
           <div
-            class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700"
+            class="flex flex-col items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700 overflow-hidden"
           >
-            Backend
+            <h3 class="w-full text-[#035C31] bg-[#FAFAF5] p-2 text-center border-b border-gray-200 font-semibold">Backend</h3>
+            <ul class="p-6 flex flex-row flex-wrap items-center justify-center gap-2">
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">Java</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">Spring</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">Spring Boot</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">Hibernate</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">REST APIs</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">MySQL</li>
+            </ul>
           </div>
           <div
-            class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700"
+            class="flex flex-col items-center justify-center rounded-lg border-2 border-[#035C31] bg-white text-gray-700 overflow-hidden"
           >
-            Frontend
+            <h3 class="w-full text-[#035C31] bg-[#FAFAF5] p-2 text-center border-b border-gray-200 font-semibold">Frontend</h3>
+            <ul class="p-6 flex flex-row flex-wrap items-center justify-center gap-2">
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">HTML</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">CSS</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">JavaScript</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">React</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">Tailwind CSS</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">TypeScript</li>
+            </ul>
           </div>
           <div
-            class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700"
+            class="flex flex-col items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700 overflow-hidden"
           >
-            Other
+            <h3 class="w-full text-[#035C31] bg-[#FAFAF5] p-2 text-center border-b border-gray-200 font-semibold">Other</h3>
+            <ul class="p-6 flex flex-row flex-wrap items-center justify-center gap-2">
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">Git</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">Figma</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">UI Design</li>
+              <li class="bg-[#035C31] text-[#FAFAF5] p-1 px-2 rounded-full">Collaboration</li>
+            </ul>
           </div>
         </div>
       </div>
