@@ -213,31 +213,62 @@ import Layout from "../layouts/Layout.astro";
         <div class="grid grid-cols-1 gap-2 md:grid-cols-2">
           <!-- project cards -->
           <div
-            class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700"
+            class="flex flex-col items-center rounded-lg border border-gray-200 bg-white text-gray-700 overflow-hidden"
           >
-            Project A
+           <h3 class="w-full text-[#035C31] bg-[#FAFAF5] p-2 text-center border-b border-gray-200 font-semibold">Portfolio Website</h3>
+           <!-- inner content -->
+           <div class="p-4 flex flex-col items-center gap-2">
+            <img
+              src="src/assets/Portfolio_Preview.png"
+              alt="Thumbnail of Portfolio Website"
+              class="mt-4 h-48 w-full rounded  mx-auto my-auto object-cover"
+            />
+            <p class="flex py-4">My personal developer website, where I show my skills, design thinking and projects. The website is designed fully from scratch in Figma, and built using Astro and Tailwind CSS.</p>
+            <ul class="flex flex-grow flex-row flex-wrap  gap-2">
+              <li class="bg-gray-100 text-sm text-[#404040] p-1 px-2 rounded-full border border border-[#404040]">Astro</li>
+              <li class="bg-gray-100 text-sm text-[#404040] p-1 px-2 rounded-full border border border-[#404040]">Tailwind CSS</li>
+              <li class="bg-gray-100 text-sm text-[#404040] p-1 px-2 rounded-full border border border-[#404040]">Figma</li>
+            </ul>
+            <div class="flex flex-row gap-2 py-4">
+              <a href="https://github.com/v-gajjar" class="px-4 py-2 text-center w-auto rounded bg-[#035C31] text-white text-sm">GitHub</a>
+            </div>
+           </div>
           </div>
+
           <div
-            class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700"
+            class="flex flex-col items-center rounded-lg border border-gray-200 bg-white text-gray-700 overflow-hidden"
           >
-            Project B
+           <h3 class="w-full text-[#035C31] bg-[#FAFAF5] p-2 text-center border-b border-gray-200 font-semibold">Minesweeper</h3>
+           <!-- inner content -->
+           <div class="p-4 flex flex-col items-center gap-2">
+            <img
+              src="src/assets/Minesweeper_Preview.png"
+              alt="Thumbnail of Minesweeper Game Board"
+              class="mt-4 h-48 w-full rounded  mx-auto my-auto object-cover"
+            />
+            <p class="flex py-4">A community-driven, open-source reimagining of the iconic Minesweeper game. Not another generic, copycat clone; We're evolving the game with modern styling and thoughtful UX.</p>
+            <ul class="flex flex-grow flex-row flex-wrap  gap-2">
+              <li class="bg-gray-100 text-sm text-[#404040] p-1 px-2 rounded-full border border border-[#404040]">React</li>
+              <li class="bg-gray-100 text-sm text-[#404040] p-1 px-2 rounded-full border border border-[#404040]">TypeScript</li>
+              <li class="bg-gray-100 text-sm text-[#404040] p-1 px-2 rounded-full border border border-[#404040]">CSS 3</li>
+              <li class="bg-gray-100 text-sm text-[#404040] p-1 px-2 rounded-full border border border-[#404040]">HTML 5</li>
+            </ul>
+            <div class="flex flex-row gap-2 py-4">
+              <a href="https://v-gajjar.github.io/Minesweeper/" class="px-4 py-2 text-center w-auto rounded border border-[#035C31] text-[#035C31] text-sm">Live Demo</a>
+              <a href="https://github.com/v-gajjar/Minesweeper" class="px-4 py-2 text-center w-auto rounded bg-[#035C31] text-white text-sm">GitHub</a>
+            </div>
+           </div>
           </div>
-          <div
-            class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700"
-          >
-            Project C
-          </div>
-          <div
-            class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700"
-          >
-            Project D
-          </div>
+
 
           <!-- see more projects card -->
           <div
-            class="flex h-48 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700 col-span-full"
+            class="flex p-6 items-center justify-center rounded-lg border border-gray-200 bg-white text-gray-700 col-span-full"
           >
-            See more projects
+          <div class="flex flex-col items-center gap-4">
+            <span class="text-center text-[#035C31]">Want to see what else I'm building? Take a look at more projects on my</span>
+            <a href="https://github.com/v-gajjar" class="px-4 py-2 text-center w-auto rounded bg-[#035C31] text-white">GitHub</a>
+          </div>
           </div>
         </div>
       </div>
