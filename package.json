@@ -12,8 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@iconify-json/bi": "^1.2.7",
     "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.15.8",
+    "astro-icon": "^1.1.5",
     "tailwindcss": "^4.1.17"
   }
 }
