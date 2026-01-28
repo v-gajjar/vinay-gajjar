@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [
     icon({
       include: {
-        bi: ["*"], // (Default) Loads entire Bootstrap Icon set
+        bi: ["list", "x", "github", "linkedin", "substack"],
       },
     }),
   ],
