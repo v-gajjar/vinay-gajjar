@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [
     icon({
       include: {
-        bi: ["list", "x", "github", "linkedin", "substack"],
+        bi: ["list", "x", "github", "linkedin", "substack", "star-fill"],
       },
     }),
   ],
