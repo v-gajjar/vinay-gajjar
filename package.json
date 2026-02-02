@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
     "@iconify-json/bi": "^1.2.7",
     "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.15.8",
