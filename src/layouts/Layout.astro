@@ -10,29 +10,17 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro Basics</title>
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-100 font-sans">
+    <slot />
 
-    <script>
+        <script>
       let isOpen = false;
       document.addEventListener("DOMContentLoaded", () => {
         const navMenu = document.getElementById("nav-menu");
         const toggleNavMenuButton = document.getElementById("toggle-nav-menu");
         const [hamburgerIcon, xIcon] =
           toggleNavMenuButton.querySelectorAll("svg");
-
-        navMenu.querySelectorAll("a").forEach((link) => {
-          link.addEventListener("click", () => {
-
-              closeNavMenu();
-          });
-        });
-
-        toggleNavMenuButton.addEventListener("click", () => {
-          if (isOpen) {
-              closeNavMenu();
-          } else {
-              openNavMenu();
-          }
-        });
 
         const openNavMenu = () => {
             hamburgerIcon.classList.replace("opacity-100", "opacity-0");
@@ -51,10 +39,22 @@ import "../styles/global.css";
 
             isOpen = false;
         }
+
+                navMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+
+              closeNavMenu();
+          });
+        });
+
+        toggleNavMenuButton.addEventListener("click", () => {
+          if (isOpen) {
+              closeNavMenu();
+          } else {
+              openNavMenu();
+          }
+        });
       });
     </script>
-  </head>
-  <body class="flex flex-col min-h-screen bg-gray-100 font-sans">
-    <slot />
   </body>
 </html>

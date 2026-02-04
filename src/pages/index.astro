@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Icon } from 'astro-icon/components'
+
+import profilePic from '../assets/ProfilePic.png';
+import portfolioPreview from '../assets/Portfolio_Preview.png';
+import minesweeperPreview from '../assets/Minesweeper_Preview.png';
 ---
 
 <Layout>
@@ -53,7 +57,7 @@ import { Icon } from 'astro-icon/components'
           <div class="flex flex-col md:w-md">
             <div class="flex flex-col items-center w-full md:flex-row md:my-4">
               <img
-                src="src/assets/ProfilePic.png"
+                src={profilePic.src}
                 alt="Vinay Gajjar Profile Picture"
                 class="mt-4 w-34 h-34 rounded-full mx-auto object-cover aspect-square"
               />
@@ -284,7 +288,7 @@ import { Icon } from 'astro-icon/components'
             <!-- inner content -->
             <div class="p-4 flex flex-col items-center gap-2">
               <img
-                src="src/assets/Portfolio_Preview.png"
+                src={portfolioPreview.src}
                 alt="Thumbnail of Portfolio Website"
                 class="mt-4 h-48 w-full rounded mx-auto my-auto object-cover"
               />
@@ -331,7 +335,7 @@ import { Icon } from 'astro-icon/components'
             <!-- inner content -->
             <div class="p-4 flex flex-col items-center gap-2">
               <img
-                src="src/assets/Minesweeper_Preview.png"
+                src={minesweeperPreview.src}
                 alt="Thumbnail of Minesweeper Game Board"
                 class="mt-4 h-48 w-full rounded mx-auto my-auto object-cover"
               />
