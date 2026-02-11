@@ -1,5 +1,5 @@
 ---
-import '@fontsource-variable/inter';
+import "@fontsource-variable/inter";
 import "../styles/global.css";
 ---
 
@@ -9,12 +9,16 @@ import "../styles/global.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta
+      property="og:image"
+      content={new URL("/portfolio_og_image.png", Astro.url).href}
+    />
     <title>Vinay Gajjar - Personal Website</title>
   </head>
   <body class="flex flex-col min-h-dvh bg-gray-100 font-sans">
     <slot />
 
-        <script>
+    <script>
       let isOpen = false;
       document.addEventListener("DOMContentLoaded", () => {
         const navMenu = document.getElementById("nav-menu");
@@ -23,35 +27,34 @@ import "../styles/global.css";
           toggleNavMenuButton.querySelectorAll("svg");
 
         const openNavMenu = () => {
-            hamburgerIcon.classList.replace("opacity-100", "opacity-0");
-            xIcon.classList.replace("opacity-0", "opacity-100");
+          hamburgerIcon.classList.replace("opacity-100", "opacity-0");
+          xIcon.classList.replace("opacity-0", "opacity-100");
 
-            navMenu.classList.replace("translate-x-full", "translate-x-0");
+          navMenu.classList.replace("translate-x-full", "translate-x-0");
 
-            isOpen = true;
-        }
+          isOpen = true;
+        };
 
         const closeNavMenu = () => {
-            hamburgerIcon.classList.replace("opacity-0", "opacity-100");
-            xIcon.classList.replace("opacity-100", "opacity-0");
+          hamburgerIcon.classList.replace("opacity-0", "opacity-100");
+          xIcon.classList.replace("opacity-100", "opacity-0");
 
-            navMenu.classList.replace("translate-x-0", "translate-x-full");
+          navMenu.classList.replace("translate-x-0", "translate-x-full");
 
-            isOpen = false;
-        }
+          isOpen = false;
+        };
 
-                navMenu.querySelectorAll("a").forEach((link) => {
+        navMenu.querySelectorAll("a").forEach((link) => {
           link.addEventListener("click", () => {
-
-              closeNavMenu();
+            closeNavMenu();
           });
         });
 
         toggleNavMenuButton.addEventListener("click", () => {
           if (isOpen) {
-              closeNavMenu();
+            closeNavMenu();
           } else {
-              openNavMenu();
+            openNavMenu();
           }
         });
       });
