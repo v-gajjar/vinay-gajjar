@@ -2,7 +2,7 @@
 import "@fontsource-variable/inter";
 import "../styles/global.css";
 
-const ogImage = `${Astro.url.origin}/portfolio_og_image.png`;
+const ogImage = `${import.meta.env.CF_PAGES_URL}/portfolio_og_image.png`;
 ---
 
 <!doctype html>
