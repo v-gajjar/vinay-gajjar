@@ -2,12 +2,7 @@
 import "@fontsource-variable/inter";
 import "../styles/global.css";
 
-const SITE_URL =
-  import.meta.env.MODE === "development"
-    ? "http://localhost:4321"                        // local dev
-    : import.meta.env.PUBLIC_SITE_URL || `${import.meta.env.CF_PAGES_URL}`; // prod or preview
-
-const ogImage = `${SITE_URL}/portfolio_og_image.png`;
+const ogImage = `${Astro.url.origin}/portfolio_og_image.png`;
 ---
 
 <!doctype html>
