@@ -2,7 +2,10 @@
 import "@fontsource-variable/inter";
 import "../styles/global.css";
 
-const ogImage = `${import.meta.env.CF_PAGES_URL}/portfolio_og_image.png`;
+
+const SITE_URL = import.meta.env.CF_PAGES_URL || "http://localhost:4321";
+const SITE_DOMAIN = new URL(SITE_URL).hostname;
+const ogImage = `${SITE_URL}/og-image.png`;
 ---
 
 <!doctype html>
@@ -15,7 +18,7 @@ const ogImage = `${import.meta.env.CF_PAGES_URL}/portfolio_og_image.png`;
     <meta name="description" content="website" />
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://beta.vinay-gajjar.pages.dev/" />
+    <meta property="og:url" content={SITE_URL} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Vinay Gajjar - Personal Website" />
     <meta
@@ -26,10 +29,10 @@ const ogImage = `${import.meta.env.CF_PAGES_URL}/portfolio_og_image.png`;
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="beta.vinay-gajjar.pages.dev" />
+    <meta property="twitter:domain" content={SITE_DOMAIN} />
     <meta
       property="twitter:url"
-      content="https://beta.vinay-gajjar.pages.dev/"
+      content={SITE_URL}
     />
     <meta name="twitter:title" content="Vinay Gajjar - Personal Website" />
     <meta
