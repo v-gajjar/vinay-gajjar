@@ -11,10 +11,33 @@ const ogImage = `${import.meta.env.CF_PAGES_URL}/portfolio_og_image.png`;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="description" content="website" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://beta.vinay-gajjar.pages.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vinay Gajjar - Personal Website" />
     <meta
-      property="og:image"
-      content={ogImage}
+      property="og:description"
+      content="A full-stack developer with a front-end focus."
     />
+    <meta property="og:image" content={ogImage} />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="beta.vinay-gajjar.pages.dev" />
+    <meta
+      property="twitter:url"
+      content="https://beta.vinay-gajjar.pages.dev/"
+    />
+    <meta name="twitter:title" content="Vinay Gajjar - Personal Website" />
+    <meta
+      name="twitter:description"
+      content="A full-stack developer with a front-end focus."
+    />
+    <meta name="twitter:image" content={ogImage} />
+
     <title>Vinay Gajjar - Personal Website</title>
   </head>
   <body class="flex flex-col min-h-dvh bg-gray-100 font-sans">
