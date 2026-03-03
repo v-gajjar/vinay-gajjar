@@ -1,5 +1,55 @@
-@import "tailwindcss";
+  @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter var', 'system-ui', 'sans-serif';
+  --font-sans: 'Inter var', system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* === Core brand === */
+    --brand: #035C31;
+
+    /* === Text === */
+    --color-text-body: #404040;
+    --color-text-muted: #4d4d4d;
+    --color-text-on-brand: #ffffff;
+
+    /* === Background === */
+    --color-bg-canvas: #f3f4f6;
+    --color-bg-surface: #ffffff;
+    --color-bg-surface-muted: #f3f4f6;
+    --color-bg-brand: var(--brand);
+    --color-bg-brand-subtle: #fafaf5;
+
+    /* === Border === */
+    --color-border-default: #e5e7eb;
+    --color-border-brand: var(--brand);
+  }
+
+  /* === Defaults (replace Tailwind defaults) === */
+
+  body {
+    background-color: var(--color-bg-canvas);
+    color: var(--color-text-body);
+  }
+
+  *, ::before, ::after {
+    border-color: var(--color-border-default);
+  }
+}
+
+@layer utilities {
+  /* Text */
+  .text-muted { color: var(--color-text-muted); }
+  .text-brand { color: var(--brand); }
+  .text-on-brand { color: var(--color-text-on-brand); }
+
+  /* Background */
+  .bg-surface { background-color: var(--color-bg-surface); }
+  .bg-surface-muted { background-color: var(--color-bg-surface-muted); }
+  .bg-brand { background-color: var(--color-bg-brand); }
+  .bg-brand-subtle { background-color: var(--color-bg-brand-subtle); }
+
+  /* Border */
+  .border-brand { border-color: var(--color-border-brand); }
 }
