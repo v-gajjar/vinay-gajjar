@@ -1,4 +1,4 @@
-  @import "tailwindcss";
+@import "tailwindcss";
 
 @theme {
   --font-sans: 'Inter var', system-ui, sans-serif;
@@ -6,27 +6,27 @@
 
 @layer base {
   :root {
-    /* === Core brand === */
+    /* signature brand color */
     --brand: #035C31;
 
-    /* === Text === */
+    /* text colour tokens */
     --color-text-body: #404040;
     --color-text-muted: #4d4d4d;
     --color-text-on-brand: #ffffff;
 
-    /* === Background === */
+    /* background colour tokens */
     --color-bg-canvas: #f3f4f6;
     --color-bg-surface: #ffffff;
     --color-bg-surface-muted: #f3f4f6;
     --color-bg-brand: var(--brand);
     --color-bg-brand-subtle: #fafaf5;
 
-    /* === Border === */
+    /* border colour tokens */
     --color-border-default: #e5e7eb;
     --color-border-brand: var(--brand);
   }
 
-  /* === Defaults (replace Tailwind defaults) === */
+  /* override Tailwind defaults */
 
   body {
     background-color: var(--color-bg-canvas);
