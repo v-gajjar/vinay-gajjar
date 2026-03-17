@@ -33,9 +33,6 @@ import minesweeperPreview from "../assets/Minesweeper_Preview.png";
     >
       <ul class="flex flex-col grow place-content-evenly">
         <li class="text-brand text-center text-lg font-bold">
-          <a href="#my-story">My Story</a>
-        </li>
-        <li class="text-brand text-center text-lg font-bold">
           <a href="#skills">Skills</a>
         </li>
         <li class="text-brand text-center text-lg font-bold">
@@ -61,21 +58,28 @@ import minesweeperPreview from "../assets/Minesweeper_Preview.png";
             focus.
           </p>
 
-          <p class="text-lg mt-3 max-w-lg italic text-muted">
+          <p class="mt-3 max-w-lg italic font-medium text-muted">
             I improve user experiences across web and mobile, and build
             thoughtful features from scratch.
           </p>
-        </div>
-        <div class="flex flex-col items-center text-center mt-4 md:mt-8">
+          <img
+            src={profilePic.src}
+            alt="Vinay Gajjar Profile Picture"
+            class="mt-4 w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto object-cover aspect-square"
+          />
+                  <div class="flex flex-col items-center text-center mt-4 md:mt-8">
           <!-- Teaser text with subtle links -->
-          <Icon class="text-brand size-12" name="bi:arrow-down" />
+          <p class="max-w-3xl pt-4 pb-2 font-medium text-brand">My journey evolved from Lego builds to commercial software builds.</p>
+          <p class="max-w-3xl text-sm text-muted">Scroll down to read <a href="#my-story" class="text-brand italic underline">my story</a>, see my <a href="#skills" class="text-brand italic underline">skills</a>, and view my <a href="#projects" class="text-brand italic underline">projects</a></p>
+          <Icon class="text-brand size-12 mt-2" name="bi:arrow-down" />
         </div>
       </div>
+        </div>
     </section>
 
     <section id="my-story" class="scroll-mt-16">
       <h2
-        class="bg-brand-subtle text-brand text-center text-lg font-bold p-2 border "
+        class="bg-brand-subtle text-brand text-center text-lg font-bold p-2 border"
       >
         My Story
       </h2>
@@ -88,14 +92,7 @@ import minesweeperPreview from "../assets/Minesweeper_Preview.png";
           <!-- inner content wrapper div -->
           <div class="flex flex-col md:w-md">
             <div class="flex flex-col items-center w-full md:flex-row md:my-4">
-              <img
-                src={profilePic.src}
-                alt="Vinay Gajjar Profile Picture"
-                class="mt-4 w-34 h-34 rounded-full mx-auto object-cover aspect-square"
-              />
-              <p
-                class="px-2 py-4 text-brand text-center text-xl font-semibold"
-              >
+              <p class="px-2 py-4 text-brand text-center text-xl font-semibold">
                 As a kid I loved building with Lego. Now, I enjoy building
                 software!
               </p>
@@ -109,10 +106,7 @@ import minesweeperPreview from "../assets/Minesweeper_Preview.png";
               class="text-center hidden opacity-0 duration-300"
               id="my-story-expanded-content-wrapper"
             >
-              <p
-                id="my-story-expanded-content"
-                class="text-center"
-              >
+              <p id="my-story-expanded-content" class="text-center">
                 <br />Since starting my career I've worked across both back-end
                 and front-end and gained experience in almost all parts of the
                 software cycle, from initial requirements gathering through to
