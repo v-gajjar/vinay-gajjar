@@ -5,6 +5,7 @@ import { Icon } from "astro-icon/components";
 import profilePic from "../assets/ProfilePic.png";
 import portfolioPreview from "../assets/Portfolio_Preview.png";
 import minesweeperPreview from "../assets/Minesweeper_Preview.png";
+import legoRobotPic from "../assets/Lego_Robot.jpg";
 ---
 
 <Layout>
@@ -33,6 +34,9 @@ import minesweeperPreview from "../assets/Minesweeper_Preview.png";
     >
       <ul class="flex flex-col grow place-content-evenly">
         <li class="text-brand text-center text-lg font-bold">
+          <a href="#my-story">My Story</a>
+        </li>
+        <li class="text-brand text-center text-lg font-bold">
           <a href="#skills">Skills</a>
         </li>
         <li class="text-brand text-center text-lg font-bold">
@@ -46,13 +50,18 @@ import minesweeperPreview from "../assets/Minesweeper_Preview.png";
     <!-- Section 1 -->
     <section
       id="hero"
-      class="scroll-mt-14 md:scroll-mt-16 my-4 md:my-8 py-8 md:py-16"
+      class="scroll-mt-14 md:scroll-mt-16 my-4 md:my-8 py-8 md:py-16 min-h-[calc(100dvh-3.5rem)] md:min-h-[calc(100dvh-4rem)] flex items-center"
     >
       <div class="max-w-3xl mx-auto px-4 text-brand">
         <!-- hero intro -->
         <div class="flex flex-col items-center text-center mb-8 md:mb-10">
           <h1 class="text-4xl md:text-5xl font-bold">Hi, I'm Vinay!</h1>
 
+          <img
+            src={profilePic.src}
+            alt="Vinay Gajjar Profile Picture"
+            class="mt-4 w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto object-cover aspect-square"
+          />
           <p class="text-lg font-semibold mt-8 max-w-md">
             A product-minded full-stack software developer with a front-end
             focus.
@@ -62,24 +71,14 @@ import minesweeperPreview from "../assets/Minesweeper_Preview.png";
             I improve user experiences across web and mobile, and build
             thoughtful features from scratch.
           </p>
-          <img
-            src={profilePic.src}
-            alt="Vinay Gajjar Profile Picture"
-            class="mt-4 w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto object-cover aspect-square"
-          />
-                  <div class="flex flex-col items-center text-center mt-4 md:mt-8">
-          <!-- Teaser text with subtle links -->
-          <p class="max-w-3xl pt-4 pb-2 font-medium text-brand">My journey evolved from Lego builds to commercial software builds.</p>
-          <p class="max-w-3xl text-sm text-muted">Scroll down to read <a href="#my-story" class="text-brand italic underline">my story</a>, see my <a href="#skills" class="text-brand italic underline">skills</a>, and view my <a href="#projects" class="text-brand italic underline">projects</a></p>
-          <Icon class="text-brand size-12 mt-2" name="bi:arrow-down" />
+          <Icon class="text-brand size-8 mt-2" name="bi:arrow-down" />
         </div>
       </div>
-        </div>
     </section>
 
-    <section id="my-story" class="scroll-mt-16">
+    <section id="my-story" class="scroll-mt-14 md:scroll-mt-16">
       <h2
-        class="bg-brand-subtle text-brand text-center text-lg font-bold p-2 border"
+        class="bg-brand-subtle text-brand text-center text-lg font-bold p-2 border "
       >
         My Story
       </h2>
@@ -92,7 +91,14 @@ import minesweeperPreview from "../assets/Minesweeper_Preview.png";
           <!-- inner content wrapper div -->
           <div class="flex flex-col md:w-md">
             <div class="flex flex-col items-center w-full md:flex-row md:my-4">
-              <p class="px-2 py-4 text-brand text-center text-xl font-semibold">
+              <img
+                src={legoRobotPic.src}
+                alt="A photo of a Lego robot"
+                class="mt-4 w-34 h-34 rounded mx-auto object-cover aspect-square"
+              />
+              <p
+                class="px-2 py-4 text-brand text-center text-xl font-semibold"
+              >
                 As a kid I loved building with Lego. Now, I enjoy building
                 software!
               </p>
@@ -106,7 +112,10 @@ import minesweeperPreview from "../assets/Minesweeper_Preview.png";
               class="text-center hidden opacity-0 duration-300"
               id="my-story-expanded-content-wrapper"
             >
-              <p id="my-story-expanded-content" class="text-center">
+              <p
+                id="my-story-expanded-content"
+                class="text-center"
+              >
                 <br />Since starting my career I've worked across both back-end
                 and front-end and gained experience in almost all parts of the
                 software cycle, from initial requirements gathering through to
