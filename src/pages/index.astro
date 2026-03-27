@@ -5,6 +5,7 @@ import { Icon } from "astro-icon/components";
 import profilePic from "../assets/ProfilePic.png";
 import portfolioPreview from "../assets/Portfolio_Preview.png";
 import minesweeperPreview from "../assets/Minesweeper_Preview.png";
+import legoRobotPic from "../assets/Lego_Robot.jpg";
 ---
 
 <Layout>
@@ -33,6 +34,9 @@ import minesweeperPreview from "../assets/Minesweeper_Preview.png";
     >
       <ul class="flex flex-col grow place-content-evenly">
         <li class="text-brand text-center text-lg font-bold">
+          <a href="#my-story">My Story</a>
+        </li>
+        <li class="text-brand text-center text-lg font-bold">
           <a href="#skills">Skills</a>
         </li>
         <li class="text-brand text-center text-lg font-bold">
@@ -43,69 +47,96 @@ import minesweeperPreview from "../assets/Minesweeper_Preview.png";
   </header>
 
   <main class="flex flex-col grow w-full mx-auto pt-14 md:pt-16">
-    <!-- Section 1 -->
-    <section id="hero" class="scroll-mt-14 md:scroll-mt-16 my-4 md:my-8 py-8 md:py-16">
+ <!-- Section 1 -->
+    <section
+      id="hero"
+      class="scroll-mt-14 md:scroll-mt-16 my-4 md:my-8 py-8 md:py-16 min-h-[calc(100dvh-3.5rem)] md:min-h-[calc(100dvh-4rem)] flex items-center"
+    >
       <div class="max-w-3xl mx-auto px-4 text-brand">
         <!-- hero intro -->
         <div class="flex flex-col items-center text-center mb-8 md:mb-10">
-          <h1 class="text-4xl md:text-5xl font-bold">Hi, I'm Vinay!</h1>
-
-          <p class="text-lg font-semibold mt-4 max-w-md">
-            A product-minded full-stack software developer with a front-end
-            focus.
-          </p>
-
-          <p class="text-base mt-3 max-w-lg italic text-muted">
-            I improve user experiences across web and mobile, and build thoughtful
-            features from scratch.
-          </p>
-        </div>
-
-        <!-- rounded card -->
-        <div
-          class="flex flex-col items-center rounded-lg border bg-surface p-4 md:p-6"
-        >
-          <!-- photo -->
-          <img
-            src={profilePic.src}
-            alt="Vinay Gajjar Profile Picture"
-            class="h-40 md:h-48 w-40 md:w-48 rounded-full object-cover aspect-square mb-4"
-          />
-
-          <!-- personality quote -->
-          <p class="pb-4 text-center italic text-brand font-medium">
-            As a kid I loved building with Lego. Now, I enjoy building software!
-          </p>
-
-          <!-- intro -->
-          <p class="text-center text-muted mt-4">
-            I'm a full-stack software developer with significant industry experience. But growing up, I never thought “one day I want to be a software developer.”
-          </p>
-
-          <!-- expandable story -->
           <div
-            class="text-center hidden opacity-0 duration-300"
-            id="my-story-expanded-content-wrapper"
+            class="flex flex-col items-center text-center mb-10 md:mb-14"
           >
-            <p id="my-story-expanded-content" class="text-center text-muted mt-2">
-              <br />
-              Since starting my career I've worked across both back-end and front-end
-              and gained experience in almost all parts of the software cycle, from
-              initial requirements gathering through to production bug fixes.
-              <br /><br />
-              But my key strength lies in front-end, where I've gained significant
-              experience designing and building complex UI features for bespoke internal
-              software applications.
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">
+              Hi, I'm Vinay!
+            </h1>
+            <p class="text-lg md:text-xl font-bold max-w-md mb-6">
+              A product-minded full-stack software developer with a front-end
+              focus.
             </p>
+            <img
+              src={profilePic.src}
+              alt="Vinay Gajjar Profile Picture"
+              class="w-36 h-36 md:w-48 md:h-48 rounded-full mx-auto object-cover aspect-square mb-8"
+            />
+            <p class="max-w-lg italic font-medium text-muted mb-10">
+              I transform thoughtful ideas into useful software, one feature at a time. Just how I used to build with Lego, one brick at a time.
+            </p>
+            <a
+              href="#projects"
+              class="px-4 py-2 text-center w-auto rounded bg-brand text-on-brand text-sm mb-4"
+              >View My Projects</a
+            >
+            <Icon class="text-brand size-8 mt-2" name="bi:arrow-down" />
           </div>
-
-          <button
-            id="my-story-expanded-content-toggle-button"
-            class="mt-4 px-4 py-2 text-sm rounded border border-brand hover:cursor-pointer"
-          >
-            Read more
-          </button>
         </div>
+      </div>
+    </section>
+
+    <section id="my-story" class="scroll-mt-14 md:scroll-mt-16">
+      <h2
+        class="bg-brand-subtle text-brand text-center text-lg font-bold p-2 border"
+      >
+        My Story
+      </h2>
+      <!-- content wrapper div -->
+      <div class="px-2 py-4 max-w-sm md:max-w-lg lg:max-w-3xl mx-auto">
+        <!-- content -->
+        <div
+          class="flex flex-col items-center justify-center rounded-lg border bg-surface p-4"
+        >
+          <!-- inner content wrapper div -->
+          <div class="flex flex-col md:w-md">
+            <div class="flex flex-col items-center w-full md:flex-row md:my-4">
+              <img
+                src={legoRobotPic.src}
+                alt="A photo of a Lego robot"
+                class="mt-4 w-34 h-34 rounded mx-auto object-cover aspect-square"
+              />
+              <p class="px-2 py-4 text-brand text-center text-xl font-semibold">
+                As a kid I loved building with Lego. Now, I enjoy building
+                software!
+              </p>
+            </div>
+            <p class="text-center">
+              I'm a full-stack software developer with significant industry
+              experience. But growing up, one thought I never had was "one day I
+              want to be a software developer."
+            </p>
+            <div
+              class="text-center hidden opacity-0 duration-300"
+              id="my-story-expanded-content-wrapper"
+            >
+              <p id="my-story-expanded-content" class="text-center">
+                <br />Since starting my career I've worked across both back-end
+                and front-end and gained experience in almost all parts of the
+                software cycle, from initial requirements gathering through to
+                production bug fixes.<br /><br /> But my key strength lie in front-end,
+                and I've gained significant experience in designing and building complex
+                UI features for bespoke internal software applications.
+              </p>
+            </div>
+            <button
+              id="my-story-expanded-content-toggle-button"
+              class="my-4 px-4 py-2 w-fit mx-auto text-center rounded border border-brand text-brand hover:cursor-pointer"
+              >Read more</button
+            >
+            <!-- closing tag for inner content wrapper div -->
+          </div>
+          <!-- closing tag for content div -->
+        </div>
+        <!-- closing tag for content wrapper div -->
       </div>
     </section>
 
