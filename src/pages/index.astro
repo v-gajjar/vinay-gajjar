@@ -55,7 +55,7 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
       <div class="max-w-6xl mx-auto px-4 text-brand w-full">
         <!-- Main layout: stacked on mobile, row on desktop -->
         <div
-          class="flex flex-col md:flex-row md:items-center md:justify-between gap-10"
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-10"
         >
           <!-- LEFT: Text -->
           <div
@@ -88,18 +88,18 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
             </a>
           </div>
 
-          <!-- RIGHT: Desktop image -->
+          <!-- RIGHT: Desktop rectangular image -->
           <div class="hidden md:flex justify-end">
             <img
               src={profilePic.src}
               alt="Vinay Gajjar Profile Picture"
-              class="w-80 h-80 rounded-xl object-cover"
+              class="w-80 h-96 rounded-xl object-cover"
             />
           </div>
         </div>
 
         <!-- Down arrow -->
-        <div class="w-full flex justify-center mt-6 md:mt-12">
+        <div class="w-full flex justify-center mt-8 md:mt-12">
           <Icon
             class="text-brand size-8 opacity-80 animate-bounce"
             name="bi:arrow-down"
