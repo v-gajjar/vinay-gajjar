@@ -47,47 +47,61 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
   </header>
 
   <main class="flex flex-col grow w-full mx-auto pt-14 md:pt-16">
- <!-- Section 1 -->
+    <!-- Section 1 -->
     <section
       id="hero"
       class="scroll-mt-14 md:scroll-mt-16 my-4 md:my-8 py-8 md:py-16 min-h-[calc(100dvh-3.5rem)] md:min-h-[calc(100dvh-4rem)] flex items-center"
     >
-      <div class="max-w-3xl mx-auto px-4 text-brand">
-        <!-- hero intro -->
-        <div class="flex flex-col items-center text-center mb-8 md:mb-10">
+      <div class="max-w-6xl mx-auto px-4 text-brand">
+        <!-- layout wrapper -->
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-10"
+        >
+          <!-- LEFT: text -->
           <div
-            class="flex flex-col items-center text-center mb-10 md:mb-14"
+            class="flex flex-col items-center text-center md:items-start md:text-left max-w-xl"
           >
-            <h1 class="text-4xl md:text-5xl font-bold mb-2">
-              Hi, I'm Vinay!
-            </h1>
-            <p class="text-lg md:text-xl font-bold max-w-md mb-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Vinay!</h1>
+
+            <p class="text-lg md:text-xl font-bold mb-6">
               A product-minded full-stack software developer with a front-end
               focus.
             </p>
+
+            <p class="italic font-medium text-muted mb-8">
+              I transform thoughtful ideas into useful software, one feature at
+              a time. Just how I used to build with Lego, one brick at a time.
+            </p>
+
+            <a
+              href="#projects"
+              class="px-5 py-2 rounded bg-brand text-on-brand text-sm"
+            >
+              View My Projects
+            </a>
+          </div>
+
+          <!-- RIGHT: image -->
+          <div class="flex justify-center md:justify-end">
             <img
               src={profilePic.src}
               alt="Vinay Gajjar Profile Picture"
-              class="w-36 h-36 md:w-48 md:h-48 rounded-full mx-auto object-cover aspect-square mb-8"
+              class="w-48 h-48 md:w-72 md:h-72 rounded-xl object-cover"
             />
-            <p class="max-w-lg italic font-medium text-muted mb-10">
-              I transform thoughtful ideas into useful software, one feature at a time. Just how I used to build with Lego, one brick at a time.
-            </p>
-            <a
-              href="#projects"
-              class="px-4 py-2 text-center w-auto rounded bg-brand text-on-brand text-sm mb-4"
-              >View My Projects</a
-            >
-            <Icon class="text-brand size-8 mt-2" name="bi:arrow-down" />
           </div>
+        </div>
+
+        <div class="w-full flex justify-center mt-8 md:mt-12">
+          <Icon
+            class="text-brand size-8 opacity-80 animate-bounce"
+            name="bi:arrow-down"
+          />
         </div>
       </div>
     </section>
 
     <section id="my-story" class="scroll-mt-14 md:scroll-mt-16 my-8 md:my-12">
-      <h2
-        class="text-brand text-center text-lg font-bold px-2 pt-2 pb-0"
-      >
+      <h2 class="text-brand text-center text-lg font-bold px-2 pt-2 pb-0">
         My Story
       </h2>
       <!-- content wrapper div -->
@@ -141,9 +155,7 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
     </section>
 
     <section id="skills" class="scroll-mt-14 md:scroll-mt-16 my-8 md:my-12">
-      <h2
-        class="text-brand text-center text-lg font-bold  px-2 pt-2 pb-0"
-      >
+      <h2 class="text-brand text-center text-lg font-bold px-2 pt-2 pb-0">
         Skills
       </h2>
       <!-- content wrapper div -->
@@ -253,9 +265,7 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
     </section>
 
     <section id="projects" class="scroll-mt-14 md:scroll-mt-16 my-8 md:my-12">
-      <h2
-        class="text-brand text-center text-lg font-bold  px-2 pt-2 pb-0"
-      >
+      <h2 class="text-brand text-center text-lg font-bold px-2 pt-2 pb-0">
         Projects
       </h2>
       <!-- content wrapper div -->
