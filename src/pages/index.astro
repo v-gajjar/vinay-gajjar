@@ -53,45 +53,53 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
       class="scroll-mt-14 md:scroll-mt-16 my-4 md:my-8 py-8 md:py-16 min-h-[calc(100dvh-3.5rem)] md:min-h-[calc(100dvh-4rem)] flex items-center"
     >
       <div class="max-w-6xl mx-auto px-4 text-brand w-full">
-        <!-- layout wrapper -->
+        <!-- Main layout: stacked on mobile, row on desktop -->
         <div
           class="flex flex-col md:flex-row md:items-center md:justify-between gap-10"
         >
-          <!-- RIGHT: image -->
-          <div
-            class="flex justify-center md:justify-end md:pr-4 order-first md:order-last"
-          >
-            <img
-              src={profilePic.src}
-              alt="Vinay Gajjar Profile Picture"
-              class="w-56 sm:w-64 md:w-80 lg:w-96 h-auto rounded-xl object-cover"
-            />
-          </div>
-
-          <!-- LEFT: text -->
+          <!-- LEFT: Text -->
           <div
             class="flex flex-col items-center text-center md:items-start md:text-left max-w-lg md:max-w-xl order-last md:order-first"
           >
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Vinay!</h1>
-            <p class="text-lg md:text-xl font-bold mb-6">
+
+            <p class="text-lg md:text-xl font-bold mb-4 md:mb-6">
               A product-minded full-stack software developer with a front-end
               focus.
             </p>
-            <p class="italic font-medium text-muted mb-8">
+
+            <!-- Mobile-only circular image between paragraphs -->
+            <img
+              src={profilePic.src}
+              alt="Vinay Gajjar Profile Picture"
+              class="w-36 h-36 rounded-full object-cover mb-4 md:hidden"
+            />
+
+            <p class="italic font-medium text-muted mb-6 md:mb-8">
               I transform thoughtful ideas into useful software, one feature at
               a time. Just how I used to build with Lego, one brick at a time.
             </p>
+
             <a
               href="#projects"
-              class="px-5 py-2 rounded bg-brand text-on-brand text-sm"
+              class="px-5 py-2 rounded bg-brand text-on-brand text-sm mb-4"
             >
               View My Projects
             </a>
           </div>
+
+          <!-- RIGHT: Desktop image -->
+          <div class="hidden md:flex justify-end">
+            <img
+              src={profilePic.src}
+              alt="Vinay Gajjar Profile Picture"
+              class="w-80 h-80 rounded-xl object-cover"
+            />
+          </div>
         </div>
 
-        <!-- Arrow down -->
-        <div class="w-full flex justify-center mt-8 md:mt-12">
+        <!-- Down arrow -->
+        <div class="w-full flex justify-center mt-6 md:mt-12">
           <Icon
             class="text-brand size-8 opacity-80 animate-bounce"
             name="bi:arrow-down"
