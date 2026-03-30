@@ -52,27 +52,35 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
       id="hero"
       class="scroll-mt-14 md:scroll-mt-16 my-4 md:my-8 py-8 md:py-16 min-h-[calc(100dvh-3.5rem)] md:min-h-[calc(100dvh-4rem)] flex items-center"
     >
-      <div class="max-w-6xl mx-auto px-4 text-brand">
+      <div class="max-w-6xl mx-auto px-4 text-brand w-full">
         <!-- layout wrapper -->
         <div
           class="flex flex-col md:flex-row md:items-center md:justify-between gap-10"
         >
+          <!-- RIGHT: image -->
+          <div
+            class="flex justify-center md:justify-end md:pr-4 order-first md:order-last"
+          >
+            <img
+              src={profilePic.src}
+              alt="Vinay Gajjar Profile Picture"
+              class="w-56 sm:w-64 md:w-80 lg:w-96 h-auto rounded-xl object-cover"
+            />
+          </div>
+
           <!-- LEFT: text -->
           <div
-            class="flex flex-col items-center text-center md:items-start md:text-left max-w-xl"
+            class="flex flex-col items-center text-center md:items-start md:text-left max-w-lg md:max-w-xl order-last md:order-first"
           >
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Vinay!</h1>
-
             <p class="text-lg md:text-xl font-bold mb-6">
               A product-minded full-stack software developer with a front-end
               focus.
             </p>
-
             <p class="italic font-medium text-muted mb-8">
               I transform thoughtful ideas into useful software, one feature at
               a time. Just how I used to build with Lego, one brick at a time.
             </p>
-
             <a
               href="#projects"
               class="px-5 py-2 rounded bg-brand text-on-brand text-sm"
@@ -80,17 +88,9 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
               View My Projects
             </a>
           </div>
-
-          <!-- RIGHT: image -->
-          <div class="flex justify-center md:justify-end">
-            <img
-              src={profilePic.src}
-              alt="Vinay Gajjar Profile Picture"
-              class="w-48 h-48 md:w-72 md:h-72 rounded-xl object-cover"
-            />
-          </div>
         </div>
 
+        <!-- Arrow down -->
         <div class="w-full flex justify-center mt-8 md:mt-12">
           <Icon
             class="text-brand size-8 opacity-80 animate-bounce"
