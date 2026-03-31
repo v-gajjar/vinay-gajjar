@@ -14,7 +14,16 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
     class="fixed top-0 left-0 z-40 flex h-14 md:h-16 w-full items-center bg-brand px-4 md:px-6 text-on-brand"
   >
     <p class="text-base font-semibold grow">Vinay Gajjar</p>
-    <button id="toggle-nav-menu" class="relative size-8">
+
+    <!-- Desktop nav -->
+    <ul class="hidden md:flex flex-row gap-6 text-on-brand font-semibold">
+      <li><a href="#my-story" class="hover:underline">My Story</a></li>
+      <li><a href="#skills" class="hover:underline">Skills</a></li>
+      <li><a href="#projects" class="hover:underline">Projects</a></li>
+    </ul>
+
+    <!-- Hamburger for mobile -->
+    <button id="toggle-nav-menu" class="relative size-8 md:hidden">
       <!-- Boostrap Icons list icon -->
       <Icon
         name="bi:list"
@@ -28,9 +37,10 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
     </button>
 
     <!-- by default, position the left to the right edge of the screen -->
+    <!-- Mobile nav menu -->
     <nav
       id="nav-menu"
-      class="fixed flex flex-col top-14 md:top-16 motion-safe:transition-transform translate-x-full motion-safe:duration-200 left-0 bottom-0 w-full z-80 bg-brand-subtle px-6"
+      class="md:hidden fixed flex flex-col top-14 md:top-16 motion-safe:transition-transform translate-x-full motion-safe:duration-200 left-0 bottom-0 w-full z-80 bg-brand-subtle px-6"
     >
       <ul class="flex flex-col grow place-content-evenly">
         <li class="text-brand text-center text-lg font-bold">
