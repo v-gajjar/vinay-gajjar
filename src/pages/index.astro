@@ -67,23 +67,21 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
         <div
           class="flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-10"
         >
-          <!-- LEFT: Text -->
-          <div
-            class="flex flex-col items-center text-center md:items-start md:text-left max-w-lg md:max-w-xl order-last md:order-first"
-          >
+          <!-- HERO COLUMN: Profile photo and text -->
+          <div class="flex flex-col items-center text-center md:items-start md:text-left max-w-lg md:max-w-xl mx-auto w-full">
+            <!-- Single profile photo image, always visible -->
+            <img
+              src={profilePic.src}
+              alt="Vinay Gajjar Profile Picture"
+              class="w-36 h-36 md:w-80 md:h-80 rounded-full object-cover mb-4"
+            />
+
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Vinay!</h1>
 
             <p class="text-lg md:text-xl font-bold mb-4 md:mb-6">
               A product-minded full-stack software developer with a front-end
               focus.
             </p>
-
-            <!-- Mobile-only circular image between paragraphs -->
-            <img
-              src={profilePic.src}
-              alt="Vinay Gajjar Profile Picture"
-              class="w-36 h-36 rounded-full object-cover mb-4 md:hidden"
-            />
 
             <p class="italic font-medium text-muted mb-6 md:mb-8">
               I transform thoughtful ideas into useful software, one feature at
@@ -96,15 +94,6 @@ import legoRobotPic from "../assets/Lego_Robot.jpg";
             >
               View My Projects
             </a>
-          </div>
-
-          <!-- RIGHT: Desktop rectangular image -->
-          <div class="hidden md:flex justify-end">
-            <img
-              src={profilePic.src}
-              alt="Vinay Gajjar Profile Picture"
-              class="w-80 aspect-square rounded-full object-cover"
-            />
           </div>
         </div>
 
