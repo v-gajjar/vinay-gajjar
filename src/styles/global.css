@@ -17,7 +17,7 @@
     /* background colour tokens */
     --color-bg-canvas: #f3f4f6;
     --color-bg-surface: #ffffff;
-    --color-bg-surface-muted: #eef0f2;
+    --color-bg-surface-muted: #f9fafb;
     --color-bg-brand: var(--brand);
     --color-bg-brand-subtle: #fafaf5;
     /* border colour tokens */
