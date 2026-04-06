@@ -20,6 +20,8 @@
     --color-bg-surface-muted: #e5e7eb;
     --color-bg-brand: var(--brand);
     --color-bg-brand-subtle: #fafaf5;
+    --color-bg-section-light: #fafbfc;
+    --color-bg-section-lighter: #f8f9fa;
     /* border colour tokens */
     --color-border-default: #e5e7eb;
     --color-border-brand: var(--brand);
@@ -48,6 +50,8 @@
   .bg-surface-muted { background-color: var(--color-bg-surface-muted); }
   .bg-brand { background-color: var(--color-bg-brand); }
   .bg-brand-subtle { background-color: var(--color-bg-brand-subtle); }
+  .bg-section-light { background-color: var(--color-bg-section-light); }
+  .bg-section-lighter { background-color: var(--color-bg-section-lighter); }
 
   /* Border */
   .border-brand { border-color: var(--color-border-brand); }
